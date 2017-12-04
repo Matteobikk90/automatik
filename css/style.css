@@ -268,7 +268,7 @@ select, input[type="date"] {
     width: 59px;
 }
 
-.content-trigger .crypto-trigger-option select, .content-do .crypto-do-option select, .content-and .crypto-and-container select {
+.content-trigger .crypto-trigger-option select, .content-do .crypto-do-option select, .content-and .crypto-and-option select {
 	border-radius: 5px;
 	border: solid 2px #4a56f5;
 	outline: none !important;
@@ -339,7 +339,7 @@ select, input[type="date"] {
 	width: 107px;
 }
 
-.content-trigger-function h4:nth-child(3), .content-do .content-do-function h4:nth-child(3), .content-do .content-do-function h4:nth-child(5), .content-do .content-do-function h4:nth-child(10), .content-and .content-and-function h4:nth-child(3), .content-and .content-and-function h4:nth-child(5) {
+.content-trigger-function h4:nth-child(3), .content-do .content-do-function h4:nth-child(3), .content-do .content-do-function h4:nth-child(5), .content-do .content-do-function h4:nth-child(10), .content-and .content-and-function h4:nth-child(3), .content-and .content-and-function h4:nth-child(5), .content-and .content-and-function h4:nth-child(7) {
 	margin-left: 24px;
 }
 
