@@ -16,6 +16,37 @@ body {
     letter-spacing: 1px;
 }
 
+h1, h2, h3, h4, h5, h6, ul {
+	margin: 0;
+}
+
+/* Generral Rules */
+
+.inline-block {
+	display: inline-block;
+}
+
+.light-grey {
+	color: #9b9b9b;
+}
+
+.light-green {
+	color: #7ed321;
+}
+
+select, input[type="date"] {
+	width: 129px;
+	height: 36px;
+	border-radius: 5px;
+	background-color: #dddddd;
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.39);
+}
+
+/*
+.light-blue {
+	color: #4d5aff;
+}*/
+
 /* Inputs, buttons */
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -144,22 +175,178 @@ body {
     align-items: stretch;
 }
 
-.content-header {
-    width: 100%;
-    height: 100px;
+.container hr {
+    margin-left: 82px;
+    margin-top: 0;
+    margin-bottom: 0;
+    clear: both;
 }
 
-.content-header img {
-    margin: 44px;
+.content-header {
+    width: 91.8%;
+}
+
+.content-header .crypto-first-column, .content-header .crypto-second-column {
+	height: 118px;
+    padding: 24px;
+}
+
+.content-header .crypto-third-column {
+	height: 118px;
+    padding: 24px 0 0 24px;
 }
 
 .content-header a {
-	width: 150px;
-	background: red;
-	padding: 15px;
-	border-radius: 25px;
+    text-decoration: none;
 }
 
+/*.content-header a img:first-child {
+    margin: 44px;
+}*/
+
+.content-header .top-right-buttons {
+	position: relative;
+    top: 16px;
+}
+ 
+.content-header .top-right-buttons a {
+	display: inline-block;
+	width: 162px;
+	height: 39px;
+	margin: 0 auto;
+	border-radius: 25px;
+	background-color: #c1c1c1;
+	position: relative;
+	color: white;
+	font-size: 13px;
+} 
+
+.content-header .top-right-buttons a:last-child {
+	background-color: #ff165e;
+}
+
+.content-header .top-right-buttons span {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.content-header .top-right-buttons img {
+    position: absolute;
+    top: 12px;
+    right: 13.5px;
+}
+
+.crypto-details-container {
+ 	position: relative;
+    top: 14px;
+    left: 30px;
+}
+
+.crypto-since-container, .crypto-started-container, .crypto-generating-container, .crypto-fund-container {
+	position: relative;
+    top: 14px;
+    left: 16px;
+    margin-right: 4px;
+}
+
+.crypto-since-container h4:last-child, .crypto-started-container h4:last-child, .crypto-generating-container h4:last-child, .crypto-fund-container h4:last-child {
+	position: relative;
+    top: 6px;
+}
+
+.content-trigger, .content-do, .content-and {
+	padding: 24px;
+}
+
+.content-trigger .crypto-trigger-container, .content-do .crypto-do-container, .content-and .crypto-and-container {
+	margin: 0 10px;
+}
+
+.content-trigger .crypto-trigger-container h4, .content-do .crypto-do-container h4, .content-and .crypto-and-container h4 {
+    color: #4a56f5;
+    width: 59px;
+}
+
+.content-trigger .crypto-trigger-option select, .content-do .crypto-do-option select, .content-and .crypto-and-container select {
+	border-radius: 5px;
+	border: solid 2px #4a56f5;
+	outline: none !important;
+	background-color: #ffffff;
+	box-shadow: none;
+	color: black;
+}
+
+.content-trigger .crypto-trigger-play {
+    margin-right: 44px;
+}
+
+.content-trigger .crypto-trigger-play h5 {
+    position: relative;
+    top: -30px;
+    color: #9b9b9b;
+}
+
+.content-trigger .crypto-trigger-play div {
+	margin: 0 18px;
+}
+
+.content-trigger .crypto-trigger-play h6 {
+    position: relative;
+    top: 11px;
+}
+
+.content-trigger .crypto-trigger-play .live h6 {
+    left: 5px;
+}
+
+.content-trigger .crypto-trigger-play .pause h6 {
+    left: -5px;
+}
+
+.content-trigger-function {
+	width: 637px;
+    padding: 29px;
+	opacity: 0.06;
+	border-radius: 6px;
+	background-color: #4d5afe;
+    margin: 24px 0 24px 113px;
+    color: #000000;
+}
+
+.content-do .content-do-function, .content-and .content-and-function {
+	width: 939px;
+    padding: 29px;
+	opacity: 0.06;
+	border-radius: 6px;
+	background-color: #4d5afe;
+    margin: 24px 0 24px 113px;
+    color: #000000;
+}
+
+.content-and .content-and-function {
+	width: 1095px;
+    padding: 29px;
+	opacity: 0.06;
+	border-radius: 6px;
+	background-color: #4d5afe;
+    margin: 24px 0 24px 113px;
+    color: #000000;
+}
+
+.content-trigger-function h4, .content-do .content-do-function h4, .content-and .content-and-function h4 {
+	margin-right: 17px;
+	width: 107px;
+}
+
+.content-trigger-function h4:nth-child(3), .content-do .content-do-function h4:nth-child(3), .content-do .content-do-function h4:nth-child(5), .content-do .content-do-function h4:nth-child(10), .content-and .content-and-function h4:nth-child(3), .content-and .content-and-function h4:nth-child(5) {
+	margin-left: 24px;
+}
+
+.content-do .crypto-do-function-second, .content-and .crypto-and-function-second {
+	padding-top: 29px;
+}
+    
 .navbar {
     padding: 15px 10px;
     background: #fff;
@@ -178,7 +365,7 @@ body {
 
 .sidebar {
 	width: 100%;
-    max-width: 250px;
+    min-width: 250px;
     min-height: 100vh;
     background-color: #1c2237;
     color: #fff;
@@ -242,14 +429,7 @@ body {
 }
 
 .sidebar .bottom-list a:first-child {
-	display: block;
-	width: 162px;
-	height: 39px;
-	margin: 0 auto;
-	margin-bottom: 23px;
-	border-radius: 25px;
 	background-color: #4a56f5;
-	position: relative;
 }
 
 .sidebar .bottom-list span {
