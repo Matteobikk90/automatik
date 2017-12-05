@@ -16,7 +16,7 @@ body {
     letter-spacing: 1px;
 }
 
-h1, h2, h3, h4, h5, h6, ul {
+h1, h2, h3, h4, h5, h6, ul, p {
 	margin: 0;
 }
 
@@ -61,6 +61,99 @@ select, input[type="date"] {
 :-moz-placeholder { /* Firefox 18- */
   color: #3e6373;
 }
+
+/* Sidebar */
+
+.sidebar {
+	width: 100%;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background-color: #1c2237;
+    color: #fff;
+    transition: all 1s;
+}
+
+.sidebar .roboto-logo {
+	width: 40px;
+	margin: 0 auto;
+	margin-top: 45px;
+	margin-bottom: 30px;
+	display: block;
+}
+
+.sidebar h3 {
+	text-transform: uppercase;
+	margin: 0 0 81px;
+}
+
+.sidebar.active {
+    margin-left: -250px;
+}
+
+.sidebar .top-list li a {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 29px;
+    padding: 0 0 0 64px;
+    border-radius: 25px;
+    text-decoration: none;
+    position: relative;
+}
+
+.sidebar .top-list li a img {
+    width: 18.6px;
+	height: 21px;
+}
+
+.sidebar .top-list li a span {
+    position: absolute;
+    top: 5px;
+    left: 99px;
+    color: #7685b6;
+}
+
+.sidebar .bottom-list {
+	margin: 314px 0 0;
+}
+
+.sidebar .bottom-list a {
+	display: block;
+	width: 162px;
+	height: 39px;
+	margin: 0 auto;
+	margin-bottom: 23px;
+	border-radius: 25px;
+	background-color: #c1c1c1;
+	position: relative;
+	color: white;
+	font-size: 13px;
+}
+
+.sidebar .bottom-list a:first-child {
+	background-color: #4a56f5;
+}
+
+.sidebar .bottom-list span {
+	position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.sidebar .bottom-list img {
+	position: absolute;
+    top: 12px;
+    right: 13.5px;
+}
+
+/*.sidebar ul li a {
+    padding: 10px 0 10px 50px;
+    font-size: 1.1em;
+    display: block;
+    text-decoration: none;
+}*/
+
+/* End Sidebar */
 
 /* Login Page */
 
@@ -268,7 +361,7 @@ select, input[type="date"] {
     width: 59px;
 }
 
-.content-trigger .crypto-trigger-option select, .content-do .crypto-do-option select, .content-and .crypto-and-option select {
+.content-trigger .crypto-trigger-option select, .content-do .crypto-do-option select, .content-and .crypto-and-container select {
 	border-radius: 5px;
 	border: solid 2px #4a56f5;
 	outline: none !important;
@@ -339,7 +432,7 @@ select, input[type="date"] {
 	width: 107px;
 }
 
-.content-trigger-function h4:nth-child(3), .content-do .content-do-function h4:nth-child(3), .content-do .content-do-function h4:nth-child(5), .content-do .content-do-function h4:nth-child(10), .content-and .content-and-function h4:nth-child(3), .content-and .content-and-function h4:nth-child(5), .content-and .content-and-function h4:nth-child(7) {
+.content-trigger-function h4:nth-child(3), .content-do .content-do-function h4:nth-child(3), .content-do .content-do-function h4:nth-child(5), .content-do .content-do-function h4:nth-child(10), .content-and .content-and-function h4:nth-child(3), .content-and .content-and-function h4:nth-child(5) {
 	margin-left: 24px;
 }
 
@@ -362,95 +455,6 @@ select, input[type="date"] {
     border: none;
 }
 
-
-.sidebar {
-	width: 100%;
-    min-width: 250px;
-    min-height: 100vh;
-    background-color: #1c2237;
-    color: #fff;
-    transition: all 1s;
-}
-
-.sidebar .roboto-logo {
-	width: 40px;
-	margin: 0 auto;
-	margin-top: 45px;
-	margin-bottom: 30px;
-	display: block;
-}
-
-.sidebar h3 {
-	text-transform: uppercase;
-	margin: 0 0 81px;
-}
-
-.sidebar.active {
-    margin-left: -250px;
-}
-
-.sidebar .top-list li a {
-    font-size: 14px;
-    display: block;
-    margin-bottom: 29px;
-    padding: 0 0 0 64px;
-    border-radius: 25px;
-    text-decoration: none;
-    position: relative;
-}
-
-.sidebar .top-list li a img {
-    width: 18.6px;
-	height: 21px;
-}
-
-.sidebar .top-list li a span {
-    position: absolute;
-    top: 5px;
-    left: 99px;
-    color: #7685b6;
-}
-
-.sidebar .bottom-list {
-	margin: 314px 0 0;
-}
-
-.sidebar .bottom-list a {
-	display: block;
-	width: 162px;
-	height: 39px;
-	margin: 0 auto;
-	margin-bottom: 23px;
-	border-radius: 25px;
-	background-color: #c1c1c1;
-	position: relative;
-	color: white;
-	font-size: 13px;
-}
-
-.sidebar .bottom-list a:first-child {
-	background-color: #4a56f5;
-}
-
-.sidebar .bottom-list span {
-	position: absolute;
-    top: 10px;
-    left: 20px;
-}
-
-.sidebar .bottom-list img {
-	position: absolute;
-    top: 12px;
-    right: 13.5px;
-}
-
-/*.sidebar ul li a {
-    padding: 10px 0 10px 50px;
-    font-size: 1.1em;
-    display: block;
-    text-decoration: none;
-}*/
-
 .copyright {
     padding: 0 0 0 64px;
     font-size: 11px;
@@ -464,6 +468,124 @@ select, input[type="date"] {
 }
 
 /* End Login Page */
+
+/* Account Page */
+
+.account-header {
+    margin: 17px 0 0 29px;
+	text-transform: uppercase;
+	font-size: 14px;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.account-header ul {
+	padding: 19px 0 19px 29px;
+}
+
+.account-header ul li a {
+    padding: 21px 0;
+    color: black;
+    text-decoration: none;
+}
+
+.account-header ul li a.active {
+	border-bottom: 2px solid #ffb946;
+	color: #ffb946;
+}
+
+.account-content h4 {
+	font-size: 20px;
+	color: black;
+	padding: 55px 0 0 29px;
+}
+
+.account-content .account-details {
+	border: solid 1px #dcdcdc;
+	margin: 34px 0 19px 29px;
+    padding: 8px;
+	font-size: 14px;
+	color: black;
+    width: 312px;
+}
+
+.account-content .account-card input {
+	border: solid 1px #dcdcdc;
+	width: 312px;
+	margin: 0 0 0 29px;
+}
+
+.account-content .lite-trader {
+	width: 200px;
+	padding: 28px;
+	background-color: #9b9b9b;
+	margin: 34px 0 0 30px;
+	color: #efefef;
+}
+
+.account-content .lite-trader h4, .account-content .pro-trader h4, .account-content .guru-trader h4 {
+	padding: 0;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.account-content .lite-trader strong, .account-content .pro-trader strong {
+	font-size: 46px;
+	letter-spacing: 5.9px;
+	padding-left: 13px;
+}
+
+.account-content .lite-trader .lite-trader-details, .account-content .pro-trader .pro-trader-details, .account-content .guru-trader .guru-trader-details {
+	width: 150px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.account-content .lite-trader .lite-trader-details span, .account-content .pro-trader .pro-trader-details span, .account-content .guru-trader .guru-trader-details span {
+	font-size: 16px;
+}
+
+.account-content .lite-trader a {
+	width: 145px;
+	height: 39px;
+	display: block;
+    border-radius: 25px;
+    background-color: #9b9b9b;
+    line-height: 39px;
+	border: solid 1px #efefef;
+	color: white;
+	text-decoration: none;
+}
+
+.account-content .pro-trader, .account-content .guru-trader {
+	width: 200px;
+	padding: 28px;
+	background-color: #4d5aff;
+	box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.05);
+	margin: 34px 0 0 30px;
+	color: #efefef;
+}
+
+.account-content .pro-trader a, .account-content .guru-trader a {
+	background-color: #ff165e;
+    display: inline-block;
+    width: 145px;
+    height: 39px;
+    line-height: 39px;
+	display: block;
+    border-radius: 25px;
+    color: white;
+	text-decoration: none;
+}
+
+.account-content .guru-trader strong {
+	font-size: 56px;
+	letter-spacing: 5.9px;
+	padding-left: 13px;
+}
+
+
+
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
