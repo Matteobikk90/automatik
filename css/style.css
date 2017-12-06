@@ -547,6 +547,13 @@ select, input[type="date"] {
     border: 1px solid #dcdcdc;
     height: 36px;
     display: block;
+    padding-left: 20px;
+    color: black;
+}
+
+.account-content form  .card-js input, .card-js select {
+    color: black;
+    font-family: Roboto;
 }
 
 .account-content .lite-trader {
