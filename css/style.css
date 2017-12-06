@@ -269,7 +269,7 @@ select, input[type="date"] {
 }
 
 .container hr {
-    margin-left: 82px;
+    margin-left: 68px;
     margin-top: 0;
     margin-bottom: 0;
     clear: both;
@@ -281,12 +281,12 @@ select, input[type="date"] {
 
 .content-header .crypto-first-column, .content-header .crypto-second-column {
 	height: 118px;
-    padding: 24px;
+    padding: 24px 9px;
 }
 
 .content-header .crypto-third-column {
 	height: 118px;
-    padding: 24px 0 0 24px;
+    padding: 24px 0;
 }
 
 .content-header a {
@@ -304,7 +304,7 @@ select, input[type="date"] {
  
 .content-header .top-right-buttons a {
 	display: inline-block;
-	width: 162px;
+	width: 145px;
 	height: 39px;
 	margin: 0 auto;
 	border-radius: 25px;
@@ -336,6 +336,10 @@ select, input[type="date"] {
     left: 30px;
 }
 
+.crypto-details-container h3 {
+ 	font-size: 22px;
+}
+
 .crypto-since-container, .crypto-started-container, .crypto-generating-container, .crypto-fund-container {
 	position: relative;
     top: 14px;
@@ -349,7 +353,7 @@ select, input[type="date"] {
 }
 
 .content-trigger, .content-do, .content-and {
-	padding: 24px;
+	padding: 24px 9px;
 }
 
 .content-trigger .crypto-trigger-container, .content-do .crypto-do-container, .content-and .crypto-and-container {
@@ -398,12 +402,14 @@ select, input[type="date"] {
 }
 
 .content-trigger-function {
-	width: 637px;
-    padding: 29px;
-	opacity: 0.06;
+    max-width: 637px;
+    width: 100%;
+    height: 64px;
+    opacity: 0.06;
+    line-height: 64px;
 	border-radius: 6px;
 	background-color: #4d5afe;
-    margin: 24px 0 24px 113px;
+    margin: 24px 0 24px 128px;
     color: #000000;
 }
 
@@ -479,7 +485,7 @@ select, input[type="date"] {
 }
 
 .account-header ul {
-	padding: 19px 0 19px 29px;
+	padding: 19px 0;
 }
 
 .account-header ul li a {
@@ -499,19 +505,48 @@ select, input[type="date"] {
 	padding: 55px 0 0 29px;
 }
 
-.account-content .account-details {
+.account-content form {
+    color: black;
+}
+
+.account-content form .card-js {
+    margin: 34px 0 19px 29px;
+    width: 312px;
+}
+
+.account-content form .account-details {
 	border: solid 1px #dcdcdc;
 	margin: 34px 0 19px 29px;
     padding: 8px;
 	font-size: 14px;
 	color: black;
     width: 312px;
+    border-radius: 4px;
 }
 
-.account-content .account-card input {
-	border: solid 1px #dcdcdc;
+.account-content form input[type="checkbox"], .account-content form input[type="submit"] {
+	margin: 20px 10px 20px 29px;
+}
+
+.account-content form label {
+	font-weight: lighter;
+	cursor: pointer;
+}
+
+.account-content form input[type="submit"] {
 	width: 312px;
-	margin: 0 0 0 29px;
+	font-size: 16px;
+}
+
+.account-content form input[type="text"] {
+    margin: 10px 0 10px 29px;
+    border-radius: 4px;
+    width: 312px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    height: 36px;
+    display: block;
 }
 
 .account-content .lite-trader {
@@ -563,6 +598,7 @@ select, input[type="date"] {
 	box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.05);
 	margin: 34px 0 0 30px;
 	color: #efefef;
+	margin-bottom: 60px;
 }
 
 .account-content .pro-trader a, .account-content .guru-trader a {
@@ -590,7 +626,19 @@ select, input[type="date"] {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+@media (max-width: 992px) {
+    /* Homepage */
+	.content-trigger-function {
+    max-width: 555px;
+    width: 100%;
+    height: 130px;
+}
+
+}
+
+
 @media (max-width: 768px) {
+	/* Sidebar Toggle */
     .sidebar {
         margin-left: -250px;
     }
@@ -600,4 +648,11 @@ select, input[type="date"] {
     .sidebarCollapse span {
         display: none;
     }
+
+    /* Homepage */
+
+
 }
+
+
+

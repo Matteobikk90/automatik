@@ -9,8 +9,9 @@
 	<!-- Css -->
 
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="./bower_components/card-js/card-js.min.css">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -21,7 +22,9 @@
             <!-- Sidebar -->
             <nav class="sidebar">
 
-            	<img class="roboto-logo" width="40px" src="./images/Robo.to.png" alt="Automatik Logo" title="Automatik Logo">
+            	<a href="./home.html">
+            		<img class="roboto-logo" width="40px" src="./images/Robo.to.png" alt="Automatik Logo" title="Automatik Logo">
+        		</a>
 
                 <h3 class="text-center">Automatik</h3>
 
@@ -95,24 +98,40 @@
 
 				<div class="row">
 					<div class="account-content">
-	            		<div class="col-lg-4">
+	            		<div class="col-lg-4 col-xs-12">
 							<h4>Current Plan: Lite</h4>
-							<div class="account-details">
-								<p class="inline-block">Ammount Invested: £7849 out of £10000</p>
+							<form>
+								<div class="account-details">
+									<p class="inline-block">Ammount Invested: £7849 out of £10000</p>
+									<span>
+										<img src="./images/green-sign-icon.png" alt="green-sign-icon" title="green-sign-icon">
+									</span>
+									<p>Rule Limit: 3</p>
+									<p>Next due: 29/2/2018</p>
+									<p>
+										<a href="">Update</a>
+									</p>
+								</div>
+								<div class="card-js">
+								  <input class="card-number my-custom-class" name="card-number">
+								  <input class="name" id="the-card-name-id" name="card-holders-name" placeholder="Name on card">
+								  <input class="expiry-month" name="expiry-month">
+								  <input class="expiry-year" name="expiry-year">
+								  <input class="cvc" name="cvc">
+								</div>
+								<h4>Billing address</h4>
+								<input type="checkbox" id="checkbox_id">
 								<span>
-									<img src="./images/green-sign-icon.png" alt="green-sign-icon" title="green-sign-icon">
+									<label for="checkbox_id">Copy  from my personal address</label>
 								</span>
-								<p>Rule Limit: 3</p>
-								<p>Next due: 29/2/2018</p>
-								<p>
-									<a href="">Update</a>
-								</p>
-							</div>
-							<div class="account-card">
-								<input type="card">
-							</div>
+								<input type="text">
+								<input type="text">
+								<input type="text">
+								<input type="text">
+								<input value="Save" type="submit" class="btn btn-success">
+							</form>
 	        			</div>
-	        			<div class="col-lg-8">
+	        			<div class="col-lg-8 col-xs-12">
 	        				<h4>Plans</h4>
 	        				<div class="row">
 	        					<div class="col-lg-4 col-md-4 col-sm-6 text-center">
@@ -248,7 +267,8 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="js/js.js"></script>
+  <script src="./bower_components/card-js/card-js.min.js"></script>
+  <script src="./js/js.js"></script>
 
 </body>
 </html>
