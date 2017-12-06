@@ -563,7 +563,7 @@ select, input[type="date"] {
 	letter-spacing: 2px;
 }
 
-.account-content .lite-trader strong, .account-content .pro-trader strong {
+.account-content .lite-trader strong, .account-content .pro-trader strong, .account-content .guru-trader strong {
 	font-size: 46px;
 	letter-spacing: 5.9px;
 	padding-left: 13px;
@@ -612,13 +612,6 @@ select, input[type="date"] {
     color: white;
 	text-decoration: none;
 }
-
-.account-content .guru-trader strong {
-	font-size: 56px;
-	letter-spacing: 5.9px;
-	padding-left: 13px;
-}
-
 
 
 
