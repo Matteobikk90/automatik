@@ -113,6 +113,10 @@ select, input[type="date"] {
     color: #7685b6;
 }
 
+.sidebar .top-list span.active {
+    color: white;
+}
+
 .sidebar .bottom-list {
 	margin: 314px 0 0;
 }
@@ -146,12 +150,32 @@ select, input[type="date"] {
     right: 13.5px;
 }
 
-/*.sidebar ul li a {
-    padding: 10px 0 10px 50px;
-    font-size: 1.1em;
-    display: block;
-    text-decoration: none;
-}*/
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.copyright {
+    padding: 0 0 0 64px;
+    font-size: 11px;
+    margin: 38px 0;
+    color: #9b9b9b;
+}
+
+.copyright a {
+	color: #9b9b9b;
+	text-decoration: underline;
+}
 
 /* End Sidebar */
 
@@ -289,10 +313,6 @@ select, input[type="date"] {
     text-decoration: none;
 }
 
-/*.content-header a img:first-child {
-    margin: 44px;
-}*/
-
 .content-header .top-right-buttons {
 	position: relative;
     top: 16px;
@@ -361,7 +381,7 @@ select, input[type="date"] {
     width: 59px;
 }
 
-.content-trigger .crypto-trigger-option select, .content-do .crypto-do-option select, .content-and .crypto-and-container select {
+.content-trigger .crypto-trigger-option select, .content-do .crypto-do-option select, .crypto-and-option select {
 	border-radius: 5px;
 	border: solid 2px #4a56f5;
 	outline: none !important;
@@ -394,32 +414,13 @@ select, input[type="date"] {
     left: -5px;
 }
 
-.content-trigger-function {
-    opacity: 0.06;
+.content-trigger-function, .content-do-function, .content-and-function {
+    padding: 29px;
+	border-radius: 6px;
+	background-color: #4d5afe;
+    margin: 24px 0 24px 113px;
+    color: #000000;
     line-height: 64px;
-	border-radius: 6px;
-	background-color: #4d5afe;
-    margin: 24px 0 24px 112px;
-    padding: 29px;
-    color: #000000;
-}
-
-.content-do .content-do-function, .content-and .content-and-function {
-    padding: 29px;
-	opacity: 0.06;
-	border-radius: 6px;
-	background-color: #4d5afe;
-    margin: 24px 0 24px 113px;
-    color: #000000;
-}
-
-.content-and .content-and-function {
-    padding: 29px;
-	opacity: 0.06;
-	border-radius: 6px;
-	background-color: #4d5afe;
-    margin: 24px 0 24px 113px;
-    color: #000000;
 }
 
 .content-trigger-function h4, .content-do .content-do-function h4, .content-and .content-and-function h4 {
@@ -431,38 +432,17 @@ select, input[type="date"] {
 	margin-left: 24px;
 }
 
-.content-do .crypto-do-function-second, .content-and .crypto-and-function-second {
-	padding-top: 29px;
-}
-    
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+.content-do .crypto-do-option {
+    position: relative;
+    left: -5px;
 }
 
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
+.currency-that {
+    position: relative;
+    top: 9px;
 }
 
-.copyright {
-    padding: 0 0 0 64px;
-    font-size: 11px;
-    margin: 38px 0;
-    color: #9b9b9b;
-}
-
-.copyright a {
-	color: #9b9b9b;
-	text-decoration: underline;
-}
-
-/* End Login Page */
+/* End Homepage Page */
 
 /* Account Page */
 
@@ -550,7 +530,7 @@ select, input[type="date"] {
 	width: 200px;
 	padding: 28px;
 	background-color: #9b9b9b;
-	margin: 0 0 0 30px;
+	margin: 0 0 60px 30px;
 	color: #efefef;
 }
 
@@ -635,11 +615,18 @@ select, input[type="date"] {
     }
 
     /* Homepage */
-
+	.content-header .crypto-second-column {
+	    height: auto;
+        padding: 24px 0 24px 38px;
+	}
 
 	.crypto-trigger-play {
 		float: none !important;
 	    margin: 30px;
+	}
+
+	.crypto-fund-container {
+		margin: 25px 0;
 	}
 
 
