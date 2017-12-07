@@ -275,10 +275,6 @@ select, input[type="date"] {
     clear: both;
 }
 
-.content-header {
-    width: 91.8%;
-}
-
 .content-header .crypto-first-column, .content-header .crypto-second-column {
 	height: 118px;
     padding: 24px 9px;
@@ -333,7 +329,7 @@ select, input[type="date"] {
 .crypto-details-container {
  	position: relative;
     top: 14px;
-    left: 30px;
+    left: 16px;
 }
 
 .crypto-details-container h3 {
@@ -372,10 +368,7 @@ select, input[type="date"] {
 	background-color: #ffffff;
 	box-shadow: none;
 	color: black;
-}
-
-.content-trigger .crypto-trigger-play {
-    margin-right: 44px;
+    padding: 0 20px;
 }
 
 .content-trigger .crypto-trigger-play h5 {
@@ -402,19 +395,16 @@ select, input[type="date"] {
 }
 
 .content-trigger-function {
-    max-width: 637px;
-    width: 100%;
-    height: 64px;
     opacity: 0.06;
     line-height: 64px;
 	border-radius: 6px;
 	background-color: #4d5afe;
-    margin: 24px 0 24px 128px;
+    margin: 24px 0 24px 112px;
+    padding: 29px;
     color: #000000;
 }
 
 .content-do .content-do-function, .content-and .content-and-function {
-	width: 939px;
     padding: 29px;
 	opacity: 0.06;
 	border-radius: 6px;
@@ -424,7 +414,6 @@ select, input[type="date"] {
 }
 
 .content-and .content-and-function {
-	width: 1095px;
     padding: 29px;
 	opacity: 0.06;
 	border-radius: 6px;
@@ -502,7 +491,7 @@ select, input[type="date"] {
 .account-content h4 {
 	font-size: 20px;
 	color: black;
-	padding: 55px 0 0 29px;
+	padding: 55px 0 34px 29px;
 }
 
 .account-content form {
@@ -516,7 +505,7 @@ select, input[type="date"] {
 
 .account-content form .account-details {
 	border: solid 1px #dcdcdc;
-	margin: 34px 0 19px 29px;
+	margin: 0 0 19px 29px;
     padding: 8px;
 	font-size: 14px;
 	color: black;
@@ -536,9 +525,10 @@ select, input[type="date"] {
 .account-content form input[type="submit"] {
 	width: 312px;
 	font-size: 16px;
+	margin: 10px 0 10px 29px;
 }
 
-.account-content form input[type="text"] {
+.account-content form input[type="text"], .account-content form input[type="email"], .account-content form input[type="number"] {
     margin: 10px 0 10px 29px;
     border-radius: 4px;
     width: 312px;
@@ -560,7 +550,7 @@ select, input[type="date"] {
 	width: 200px;
 	padding: 28px;
 	background-color: #9b9b9b;
-	margin: 34px 0 0 30px;
+	margin: 0 0 0 30px;
 	color: #efefef;
 }
 
@@ -603,7 +593,7 @@ select, input[type="date"] {
 	padding: 28px;
 	background-color: #4d5aff;
 	box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.05);
-	margin: 34px 0 0 30px;
+	margin: 0 0 0 30px;
 	color: #efefef;
 	margin-bottom: 60px;
 }
@@ -628,11 +618,6 @@ select, input[type="date"] {
 ----------------------------------------------------- */
 @media (max-width: 992px) {
     /* Homepage */
-	.content-trigger-function {
-    max-width: 555px;
-    width: 100%;
-    height: 130px;
-}
 
 }
 
@@ -650,6 +635,12 @@ select, input[type="date"] {
     }
 
     /* Homepage */
+
+
+	.crypto-trigger-play {
+		float: none !important;
+	    margin: 30px;
+	}
 
 
 }

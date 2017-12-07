@@ -4,14 +4,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta charset="UTF-8">
-    <title>Automatik - Account</title>
+    <title>Automatik - Account/Settings</title>
 
 	<!-- Css -->
-
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="./bower_components/card-js/card-js.min.css">
-
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="../bower_components/card-js/card-js.min.css">
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
 
 </head>
 
@@ -22,8 +20,8 @@
             <!-- Sidebar -->
             <nav class="sidebar">
 
-            	<a href="./home.html">
-            		<img class="roboto-logo" width="40px" src="./images/Robo.to.png" alt="Automatik Logo" title="Automatik Logo">
+            	<a href="../home.html">
+            		<img class="roboto-logo" width="40px" src="../images/Robo.to.png" alt="Automatik Logo" title="Automatik Logo">
         		</a>
 
                 <h3 class="text-center">Automatik</h3>
@@ -31,19 +29,19 @@
                 <ul class="list-unstyled top-list">
                     <li>
                     	<a href="#">
-                    		<img src="./images/rules-icon.png" title="rules-icon" alt="rules-icon">
+                    		<img src="../images/rules-icon.png" title="rules-icon" alt="rules-icon">
                     		<span>Rules</span>
                     	</a>
                     	<a href="#">
-                    		<img src="./images/rules-icon.png" title="script-icon" alt="script-icon">
+                    		<img src="../images/rules-icon.png" title="script-icon" alt="script-icon">
                     		<span>Scripts</span>
                     	</a>
                     	<a href="#">
-                    		<img src="./images/exchanges-icon.png" title="exchanges-icon" alt="exchanges-icon">
+                    		<img src="../images/exchanges-icon.png" title="exchanges-icon" alt="exchanges-icon">
                     		<span>Exchanges</span>
                     	</a>
-                    	<a href="#">
-                    		<img src="./images/account-icon.png" title="account-icon" alt="account-icon">
+                    	<a href="./settings.html">
+                    		<img src="../images/account-icon.png" title="account-icon" alt="account-icon">
                     		<span>Account</span>
                     	</a>
                     </li>
@@ -53,11 +51,11 @@
                 	<li>
                 		<a href="#">
                     		<span>Reports</span>
-                    		<img src="./images/reports-icon.png" title="reports-icon" alt="reports-icon">
+                    		<img src="../images/reports-icon.png" title="reports-icon" alt="reports-icon">
                     	</a>
                     	<a href="#">
                     		<span>Support</span>
-                    		<img src="./images/support-icon.png" title="support-icon" alt="support-icon">
+                    		<img src="../images/support-icon.png" title="support-icon" alt="support-icon">
                     	</a>
                 	</li>
                 </ul>
@@ -84,10 +82,10 @@
             			<div class="account-header">
             				<ul class="list-unstyled list-inline">
             					<li>
-            						<a href="">Settings</a>
+            						<a href="./settings.html">Settings</a>
             					</li>
             					<li>
-            						<a class="active" href="">Billing</a>
+            						<a class="active" href="#">Billing</a>
             					</li>
             				</ul>
             			</div>
@@ -96,15 +94,15 @@
 
 				<!-- Account Content -->
 
-				<div class="row">
-					<div class="account-content">
+				<div class="account-content">
+					<div class="row">
 	            		<div class="col-lg-4 col-xs-12">
 							<h4>Current Plan: Lite</h4>
 							<form>
 								<div class="account-details">
 									<p class="inline-block">Ammount Invested: £7849 out of £10000</p>
 									<span>
-										<img src="./images/green-sign-icon.png" alt="green-sign-icon" title="green-sign-icon">
+										<img src="../images/green-sign-icon.png" alt="green-sign-icon" title="green-sign-icon">
 									</span>
 									<p>Rule Limit: 3</p>
 									<p>Next due: 29/2/2018</p>
@@ -120,9 +118,9 @@
 								  <input class="cvc" name="cvc">
 								</div>
 								<h4>Billing address</h4>
-								<input type="checkbox" id="checkbox_id">
+								<input type="checkbox" id="personal-address">
 								<span>
-									<label for="checkbox_id">Copy  from my personal address</label>
+									<label for="personal-address">Copy from my personal address</label>
 								</span>
 								<input placeholder="Address" type="text">
 								<input placeholder="City" type="text">
@@ -143,22 +141,22 @@
 	        							<br />
 	        							<div class="lite-trader-details">
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>3 rule</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>Up to £10000</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>E-mail support</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>1% fee on gains</span>
 										</div>
@@ -175,34 +173,34 @@
 	        							<br />
 										<div class="pro-trader-details">
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>10 rules</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>Up to £150.000</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>Phone support</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>Basic reports</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>0.5% fee on gains</span>
 										</div>
 										<br />
 										<a href="#">
 											<span>Upgrade</span>
-											<img src="./images/plus-icon.png" alt="">
+											<img src="../images/plus-icon.png" alt="">
 										</a>
 	        						</div>
 	        					</div>
@@ -215,39 +213,39 @@
 	        							<br />
 										<div class="guru-trader-details">
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>Unlimited rules</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>Up to £500.000</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>24/7 phone support</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>Detailed reports</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>Zapier Integration</span>
 											<br />
 											<span>
-												<img src="./images/plan-icon.png" title="plan-icon" alt="plan-icon">
+												<img src="../images/plan-icon.png" title="plan-icon" alt="plan-icon">
 											</span>
 											<span>0.5% fee on gains</span>
 										</div>
 										<br />
 										<a href="#">
 											<span>Upgrade</span>
-											<img src="./images/plus-icon.png" alt="">
+											<img src="../images/plus-icon.png" alt="">
 										</a>
 	        						</div>
 	        					</div>
@@ -263,12 +261,10 @@
 	<!-- Js -->
 
 	<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="./bower_components/card-js/card-js.min.js"></script>
-  <script src="./js/js.js"></script>
+  src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../bower_components/card-js/card-js.min.js"></script>
+  <script src="../js/js.js"></script>
 
 </body>
 </html>
