@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6, ul, p {
 	color: #9b9b9b;
 }
 
+.black {
+	color: black;
+}
+
 .light-green {
 	color: #7ed321;
 }
@@ -343,14 +347,13 @@ path#middle {
 }
 
 .container hr {
-    margin-left: 68px;
+    margin-left: 24px;
     margin-top: 0;
     margin-bottom: 0;
     clear: both;
 }
 
-.content-header .crypto-first-column, .content-header .crypto-second-column {
-	height: 118px;
+.content-header .crypto-first-column, .content-header .crypto-second-column, .content-header .crypto-second-column-marketplace {
     padding: 24px 9px;
 }
 
@@ -396,6 +399,15 @@ path#middle {
     right: 13.5px;
 }
 
+.crypto-balance-container {
+	position: relative;
+    top: 13px;
+}
+
+.crypto-balance-container .crypto-balance span strong {
+    font-weight: 500;
+}
+
 .crypto-details-container {
  	position: relative;
     top: 14px;
@@ -413,7 +425,13 @@ path#middle {
     margin-right: 4px;
 }
 
-.crypto-since-container h4:last-child, .crypto-started-container h4:last-child, .crypto-generating-container h4:last-child, .crypto-fund-container h4:last-child {
+.crypto-since-home-container, .crypto-started-home-container {
+    position: relative;
+    top: 8px;
+    margin: 0 3px;
+}
+
+.crypto-since-container h4:last-child, .crypto-started-container h4:last-child, .crypto-generating-container h4:last-child, .crypto-fund-container h4:last-child, .crypto-since-home-container h4:last-child, .crypto-started-home-container h4:last-child {
 	position: relative;
     top: 6px;
 }
@@ -640,14 +658,19 @@ path#middle {
 	text-decoration: none;
 }
 
-
-
+.no-overflow {
+	overflow: hidden;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 992px) {
     /* Homepage */
+    .crypto-second-column-marketplace {
+		position: relative;
+    	left: -14px;
+	}
 
 }
 
@@ -674,12 +697,17 @@ path#middle {
         padding: 24px 0 24px 38px;
 	}
 
+	.content-header .crypto-second-column {
+		height: auto;
+        padding: 24px 0 24px 0;
+	}
+
 	.crypto-trigger-play {
 		float: none !important;
 	    margin: 30px;
 	}
 
-	.crypto-fund-container {
+	.crypto-generating-container, .crypto-since-home-container, .crypto-fund-container {
 		margin: 25px 0;
 	}
 

@@ -2,19 +2,65 @@ $(document).ready(function() {
 
 	$('.collpasingSidebar').on('click', function () {
         $('.sidebar').toggleClass('active');
+
+        if ($('.sidebar').hasClass('active')) {
+  			$('#checkIfNavbarIsOpen').removeClass('no-overflow');
+    	} else {
+    		$('#checkIfNavbarIsOpen').addClass('no-overflow');
+    	}
     });
 
-	  $(".collpasingSidebar").click(function() {
-	    return $(".collpasingSidebar").toggleClass("cross");
-	  });
+  	$(".collpasingSidebar").click(function() {
+    	return $(".collpasingSidebar").toggleClass("cross");
+  	});
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiPGFub255bW91cz4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQSxNQUFBLENBQUEsRUFBQTs7RUFBQSxDQUFBLEdBQUksV0FBQSxDQUFZLFFBQUEsQ0FBQSxDQUFBO1dBQ2QsQ0FBQSxDQUFFLEtBQUYsQ0FBUSxDQUFDLFdBQVQsQ0FBcUIsT0FBckI7RUFEYyxDQUFaLEVBRUYsSUFGRTs7RUFJSixDQUFBLENBQUUsS0FBRixDQUFRLENBQUMsS0FBVCxDQUFlLFFBQUEsQ0FBQSxDQUFBO0lBQ2IsYUFBQSxDQUFjLENBQWQ7V0FDQSxDQUFBLENBQUUsS0FBRixDQUFRLENBQUMsV0FBVCxDQUFxQixPQUFyQjtFQUZhLENBQWY7O0VBSUEsTUFBQSxHQUFTLFFBQUEsQ0FBQSxDQUFBO1dBQ1AsQ0FBQSxDQUFFLE1BQUYsQ0FBUyxDQUFDLEdBQVYsQ0FDRTtNQUFBLFlBQUEsRUFBYyxDQUFDLENBQUMsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxXQUFQLEdBQXFCLEdBQXRCLENBQUEsR0FBNkIsQ0FBOUIsQ0FBRixHQUFxQztJQUFuRCxDQURGO0VBRE87O0VBSVQsQ0FBQSxDQUFFLE1BQUYsQ0FBUyxDQUFDLE1BQVYsQ0FBaUIsTUFBakI7O0VBQ0EsTUFBQSxDQUFBO0FBYkEiLCJzb3VyY2VzQ29udGVudCI6WyJpID0gc2V0SW50ZXJ2YWwgLT5cbiAgJChcImRpdlwiKS50b2dnbGVDbGFzcyBcImNyb3NzXCJcbiwgMTUwMFxuXG4kKFwiZGl2XCIpLmNsaWNrIC0+XG4gIGNsZWFySW50ZXJ2YWwgaVxuICAkKFwiZGl2XCIpLnRvZ2dsZUNsYXNzIFwiY3Jvc3NcIlxuXG5yZXNpemUgPSAtPlxuICAkKFwiYm9keVwiKS5jc3NcbiAgICBcIm1hcmdpbi10b3BcIjogfn4oKHdpbmRvdy5pbm5lckhlaWdodCAtIDE1MCkgLyAyKSArIFwicHhcIlxuICAgIFxuJCh3aW5kb3cpLnJlc2l6ZSByZXNpemVcbnJlc2l6ZSgpXG4iXX0=
-//# sourceURL=coffeescript
+ //  	$("body").on('click', function () {
+	// 	if($('.sidebar').hasClass('active')) {
+	// 		$(this).removeClass('active');
+	// 	}
+	// });
 
     // $('#content').on('click', function () {
     // 	console.log("eghjkl")
     //     $('#sidebar.active').removeClass('active');
     // });
+
+    var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
 
 
 });
