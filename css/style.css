@@ -38,14 +38,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
 	color: #7ed321;
 }
 
-select, input[type="date"] {
-	width: 129px;
-	height: 36px;
-	border-radius: 5px;
-	background-color: #dddddd;
-	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.39);
-}
-
 /*
 .light-blue {
 	color: #4d5aff;
@@ -56,14 +48,29 @@ select, input[type="date"] {
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #3e6373;
 }
+
 ::-moz-placeholder { /* Firefox 19+ */
   color: #3e6373;
 }
+
 :-ms-input-placeholder { /* IE 10+ */
   color: #3e6373;
 }
+
 :-moz-placeholder { /* Firefox 18- */
   color: #3e6373;
+}
+
+select, input[type="date"] {
+	width: 129px;
+	height: 36px;
+	border-radius: 5px;
+	background-color: #dddddd;
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.39);
+}
+
+input:focus {
+    border: 1px solid #3e6373 !important;
 }
 
 /* Hamburger Button */
@@ -155,6 +162,10 @@ path#middle {
     position: relative;
 }
 
+.sidebar .top-list li a:hover > span {
+	color: white;
+}
+
 .sidebar .top-list li a img {
     width: 18.6px;
 	height: 21px;
@@ -188,8 +199,24 @@ path#middle {
 	font-size: 13px;
 }
 
+.sidebar .bottom-list a:hover, .content-header .top-right-buttons a:hover, .account-content .lite-trader a:hover {
+	-webkit-box-shadow: 5px 5px 19px -9px rgba(193,193,193,1);
+	-moz-box-shadow: 5px 5px 19px -9px rgba(193,193,193,1);
+	box-shadow: 5px 5px 19px -9px rgba(193,193,193,1);
+}
+
+.sidebar .bottom-list a:hover > span, .sidebar .bottom-list a:first-child:hover > span, .content-header .top-right-buttons a:hover > span {
+	color: #1c2237;
+}
+
 .sidebar .bottom-list a:first-child {
 	background-color: #4a56f5;
+}
+
+.sidebar .bottom-list a:first-child:hover {
+	-webkit-box-shadow: 5px 5px 19px -9px rgba(74,86,245,1);
+	-moz-box-shadow: 5px 5px 19px -9px rgba(74,86,245,1);
+	box-shadow: 5px 5px 19px -9px rgba(74,86,245,1);
 }
 
 .sidebar .bottom-list span {
@@ -387,6 +414,16 @@ path#middle {
 	background-color: #ff165e;
 }
 
+.content-header .top-right-buttons a:last-child:hover, .account-content .pro-trader a:hover, .account-content .guru-trader a:hover, .main-background .login-container form input[type="submit"]:hover {
+	-webkit-box-shadow: 5px 5px 19px -9px rgba(255,22,94,1);
+	-moz-box-shadow: 5px 5px 19px -9px rgba(255,22,94,1);
+	box-shadow: 5px 5px 19px -9px rgba(255,22,94,1);
+}
+
+.content-header .top-right-buttons a:last-child:hover > span {
+	color: #1c2237;
+}
+
 .content-header .top-right-buttons span {
     position: absolute;
     top: 10px;
@@ -489,6 +526,9 @@ path#middle {
     margin: 24px 0 24px 113px;
     color: #000000;
     line-height: 64px;
+    -webkit-box-shadow: 10px 10px 19px -9px rgba(77,90,254,1);
+	-moz-box-shadow: 10px 10px 19px -9px rgba(77,90,254,1);
+	box-shadow: 10px 10px 19px -9px rgba(77,90,254,1);
 }
 
 .content-trigger-function h4, .content-do .content-do-function h4, .content-and .content-and-function h4 {
@@ -531,6 +571,10 @@ path#middle {
     text-decoration: none;
 }
 
+.account-header ul li a:hover {
+	color: #ffb946;
+}
+
 .account-header ul li a.active {
 	border-bottom: 2px solid #ffb946;
 	color: #ffb946;
@@ -568,6 +612,7 @@ path#middle {
 .account-content form label {
 	font-weight: lighter;
 	cursor: pointer;
+	font-size: 16px;
 }
 
 .account-content form input[type="submit"] {
@@ -600,6 +645,9 @@ path#middle {
 	background-color: #9b9b9b;
 	margin: 0 0 60px 30px;
 	color: #efefef;
+	-webkit-box-shadow: 10px 10px 19px -9px rgba(155,155,155,1);
+	-moz-box-shadow: 10px 10px 19px -9px rgba(155,155,155,1);
+	box-shadow: 10px 10px 19px -9px rgba(155,155,155,1);
 }
 
 .account-content .lite-trader h4, .account-content .pro-trader h4, .account-content .guru-trader h4 {
@@ -644,6 +692,9 @@ path#middle {
 	margin: 0 0 0 30px;
 	color: #efefef;
 	margin-bottom: 60px;
+	-webkit-box-shadow: 10px 10px 19px -9px rgba(77,90,255,1);
+	-moz-box-shadow: 10px 10px 19px -9px rgba(77,90,255,1);
+	box-shadow: 10px 10px 19px -9px rgba(77,90,255,1);
 }
 
 .account-content .pro-trader a, .account-content .guru-trader a {
@@ -673,7 +724,6 @@ path#middle {
 	}
 
 }
-
 
 @media (max-width: 768px) {
 	/* Sidebar Toggle */
@@ -712,6 +762,12 @@ path#middle {
 	}
 
 
+}
+
+@media (max-width: 450px) {
+	.account-content .col-lg-4.col-md-4.col-sm-4.col-xs-6.text-center {
+		width: 100%;
+	}
 }
 
 
