@@ -38,10 +38,10 @@ h1, h2, h3, h4, h5, h6, ul, p {
 	color: #7ed321;
 }
 
-/*
+
 .light-blue {
 	color: #4d5aff;
-}*/
+}
 
 /* Inputs, buttons */
 
@@ -76,9 +76,9 @@ input:focus {
 /* Hamburger Button */
 
 .collpasingSidebar {
-    position: fixed;
-    right: 0;
+    position: absolute;
     z-index: 100;
+    right: 0;
 }
 
 .collpasingSidebar svg {
@@ -133,6 +133,7 @@ path#middle {
     background-color: #1c2237;
     color: #fff;
     transition: all 1s;
+    position: relative;
 }
 
 .sidebar .roboto-logo {
@@ -363,7 +364,6 @@ path#middle {
 	text-decoration: underline;
 }
 
-
 /* End Login Page */
 
 /* Homepage */
@@ -378,6 +378,46 @@ path#middle {
     margin-top: 0;
     margin-bottom: 0;
     clear: both;
+}
+
+.crypto-accordions {
+	padding: 67px 12px;
+	color: black;
+}
+
+.crypto-accordions .accordion-toggle {
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+
+.crypto-accordions .rules {
+	width: 110px;
+	margin: 10px 15px;
+}
+
+.crypto-accordions .crypto-name-accordion {
+	position: relative;
+	top: -10px;
+}
+
+.crypto-accordions .panel-heading .accordion-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    content:"\e113";   
+    float: right;       
+    color: grey;        
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.crypto-accordions .panel-heading .accordion-toggle.collapsed:after {
+    content: "\e114"; 
+}
+
+
+.crypto-accordions .col-xs-12:first-child h4 {
+	margin-bottom: 25px;
 }
 
 .content-header .crypto-first-column, .content-header .crypto-second-column, .content-header .crypto-second-column-marketplace {
@@ -767,6 +807,11 @@ path#middle {
 @media (max-width: 450px) {
 	.account-content .col-lg-4.col-md-4.col-sm-4.col-xs-6.text-center {
 		width: 100%;
+	}
+
+	.crypto-accordions .crypto-name-accordion {
+	    position: relative;
+	    top: 0;
 	}
 }
 
