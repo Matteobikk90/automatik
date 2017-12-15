@@ -7,6 +7,8 @@
     <title>Automatik - Account/Settings</title>
 
 	<!-- Css -->
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="../images/Robo.to.png"/>
 	<link rel="stylesheet" href="../css/card-js/card-js.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -17,14 +19,14 @@
 <body>
 
 	<!-- Hamburger Button -->
-    	<div class="collpasingSidebar hidden-sm visible-xs">
-		  <svg viewBox="0 0 800 600">
-		    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
-		    <path d="M300,320 L540,320" id="middle"></path>
-		    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
-		  </svg>
-		</div>
-	<!-- End Hamburger Button -->
+        <div class="collpasingSidebar hidden-sm visible-xs">
+          <svg viewBox="0 0 800 600">
+            <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+            <path d="M300,320 L540,320" id="middle"></path>
+            <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+          </svg>
+        </div>
+    <!-- End Hamburger Button -->
 
 		<div class="wrapper">
 
@@ -107,11 +109,11 @@
 							<h4>Current Plan: Lite</h4>
 							<form>
 								<div class="account-details">
-									<p class="inline-block">Ammount Invested: £7849 out of £10000</p>
+									<p class="inline-block">Amount Invested: £7849 out of £10000</p>
 									<span>
 										<img src="../images/green-sign-icon.png" alt="green-sign-icon" title="green-sign-icon">
 									</span>
-									<p>Rule Limit: 3</p>
+									<p>Rules Limit: 3</p>
 									<p>Next due: 29/2/2018</p>
 									<p>
 										<a href="">Update</a>
@@ -125,9 +127,9 @@
 								  <input class="cvc" name="cvc">
 								</div>
 								<h4>Billing address</h4>
-								<input type="checkbox" id="personal-address">
-								<span>
-									<label for="personal-address">Copy from my personal address</label>
+								<span class="checkboxes">
+									<input type="checkbox" id="personal-address">
+									<label for="personal-address">Receive Newsletter, Trading Tips and Updates</label>
 								</span>
 								<input placeholder="Address" type="text">
 								<input placeholder="City" type="text">
@@ -140,12 +142,11 @@
 	        			<div class="col-lg-8 col-xs-12">
 	        				<h4>Plans</h4>
 	        				<div class="row">
-	        					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center">
+	        					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 	        						<div class="lite-trader">
-	        							<h4>Lite Trader</h4>
+	        							<h4 class="no-padding">Lite Trader</h4>
 	        							<br />
-	        							<strong>7.9$</strong>
-	        							<br />
+	        							<strong>7.99$</strong>
 	        							<br />
 	        							<div class="lite-trader-details">
 											<span>
@@ -172,12 +173,11 @@
 										<a href="#">Current</a>
 	        						</div>
 	        					</div>
-	        					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center">
+	        					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 	        						<div class="pro-trader">
-	        							<h4>Pro Trader</h4>
+	        							<h4 class="no-padding">Pro Trader</h4>
 	        							<br />
 	        							<strong>29$</strong>
-	        							<br />
 	        							<br />
 										<div class="pro-trader-details">
 											<span>
@@ -212,12 +212,11 @@
 										</a>
 	        						</div>
 	        					</div>
-	        					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center">
+	        					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 	        						<div class="guru-trader">
-	        							<h4>Guru Trader</h4>
+	        							<h4 class="no-padding">Guru Trader</h4>
 	        							<br />
 	        							<strong>199$</strong>
-	        							<br />
 	        							<br />
 										<div class="guru-trader-details">
 											<span>

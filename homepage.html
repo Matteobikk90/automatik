@@ -7,7 +7,8 @@
     <title>Automatik - Homepage</title>
 
 	<!-- Css -->
-
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="./images/Robo.to.png"/>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
@@ -16,20 +17,20 @@
 
 <body>
 
+	<!-- Hamburger Button -->
+		<div class="collpasingSidebar hidden-sm visible-xs">
+		  <svg viewBox="0 0 800 600">
+		    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+		    <path d="M300,320 L540,320" id="middle"></path>
+		    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+		  </svg>
+		</div>
+	<!-- End Hamburger Button -->
+
 	<div class="wrapper">
 
             <!-- Sidebar -->
             <nav class="sidebar">
-
-            	<!-- Hamburger Button -->
-            	<div class="collpasingSidebar hidden-sm visible-xs">
-				  <svg viewBox="0 0 800 600">
-				    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
-				    <path d="M300,320 L540,320" id="middle"></path>
-				    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
-				  </svg>
-				</div>
-				<!-- End Hamburger Button -->
 
             	<img class="roboto-logo" width="40px" src="./images/Robo.to.png" alt="Automatik Logo" title="Automatik Logo">
 
@@ -81,40 +82,30 @@
                 
             <div id="checkIfNavbarIsOpen" class="container no-overflow">
 
-            	<!-- Hamburger Button -->
-            	<div class="collpasingSidebar hidden-sm visible-xs">
-				  <svg viewBox="0 0 800 600">
-				    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
-				    <path d="M300,320 L540,320" id="middle"></path>
-				    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
-				  </svg>
-				</div>
-				<!-- End Hamburger Button -->
-
             	<div class="row">
             		<div class="content-header">
-	            		<div class="col-lg-4 col-md-5 col-xs-12">
+	            		<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 		            		<div class="crypto-first-column">
 		            			<div class="crypto-balance-container inline-block">
 			    					<h4 class="balance light-grey">Generated</h4>
-			    					<h3 class="crypto-balance">
+			    					<h4 class="crypto-balance">
 			    						<sup class="black">$</sup>
 			    						<span class="light-grey"><strong>3,456</strong></span>
 			    						<sup class="black">00</sup>
-			    					</h3>
+			    					</h4>
 			    				</div>
 								<div class="crypto-since-home-container inline-block">
-			    					<h4 class="since-home light-grey">since</h4>
+			    					<h4 class="since-home light-grey">Since</h4>
 			    					<h4 class="since-home-date light-grey">12 Dec 2017</h4>
 			    				</div>
 			    				<div class="crypto-started-home-container inline-block">
-			    					<h4 class="started-home light-grey">started</h4>
+			    					<h4 class="started-home light-grey">Started</h4>
 			    					<h4 class="started-home-with light-grey">$ 2,360.00</h4>
 			    				</div>
 		            		</div>
 	            		</div>
 
-						<div class="col-lg-6 col-md-7 col-xs-12">
+						<!-- <div class="col-lg-6 col-md-7 col-xs-12">
 		            		<div class="crypto-second-column-marketplace">
 			    				
 			    				<div class="crypto-generating-container inline-block">
@@ -143,9 +134,9 @@
 			    					</h4>
 			    				</div>
 		    				</div>
-	    				</div>
+	    				</div> -->
 							
-						<div class="col-lg-2 col-lg-offset-0 col-md-offset-3 col-md-6 col-xs-12 text-center">
+						<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
 							<div class="crypto-third-column">
 			    				<ul class="list-unstyled top-right-buttons inline-block">
 				                	<li>
@@ -184,7 +175,7 @@
 							          		<img src="./images/up-currency.png" alt="up-currency" title="up-currency">
 							          	</span>
 								        <div class="crypto-name-container inline-block rules">
-					    					<h4 class="since-home light-grey">CCY</h4>
+					    					<h4 class="since-home light-grey">Volume</h4>
 					    					<h4 class="since-home-date">MIX</h4>
 					    				</div>
 					    				<div class="crypto-time-container inline-block rules">
@@ -201,11 +192,11 @@
 					    				</div>
 					    				<div class="crypto-balance-home-container inline-block rules">
 					    					<h4 class="balance light-grey">Generated</h4>
-					    					<h3 class="crypto-balance">
+					    					<h4 class="crypto-balance">
 					    						<sup class="black">$</sup>
 					    						<span class="black"><strong>3,456</strong></span>
 					    						<sup class="black">00</sup>
-					    					</h3>
+					    					</h4>
 					    				</div>
 				    				</a>
 							      </div>
@@ -227,7 +218,7 @@
 							          		<img src="./images/up-currency.png" alt="up-currency" title="up-currency">
 							          	</span>
 								        <div class="crypto-name-container inline-block rules">
-					    					<h4 class="since-home light-grey">CCY</h4>
+					    					<h4 class="since-home light-grey">Volume</h4>
 					    					<h4 class="since-home-date">MIX</h4>
 					    				</div>
 					    				<div class="crypto-time-container inline-block rules">
@@ -244,11 +235,11 @@
 					    				</div>
 					    				<div class="crypto-balance-home-container inline-block rules">
 					    					<h4 class="balance light-grey">Generated</h4>
-					    					<h3 class="crypto-balance">
+					    					<h4 class="crypto-balance">
 					    						<sup class="black">$</sup>
 					    						<span class="black"><strong>3,456</strong></span>
 					    						<sup class="black">00</sup>
-					    					</h3>
+					    					</h4>
 					    				</div>
 				    				</a>
 							      </div>
@@ -267,10 +258,10 @@
 							        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 						        		<span class="crypto-name-accordion rules light-blue">Daily Trade Crypto</span>
 							          	<span class="crypto-name-accordion">
-							          		<img src="./images/up-currency.png" alt="up-currency" title="up-currency">
+							          		<img src="./images/down-currency.png" alt="down-currency" title="down-currency">
 							          	</span>
 								        <div class="crypto-name-container inline-block rules">
-					    					<h4 class="since-home light-grey">CCY</h4>
+					    					<h4 class="since-home light-grey">Volume</h4>
 					    					<h4 class="since-home-date">MIX</h4>
 					    				</div>
 					    				<div class="crypto-time-container inline-block rules">
@@ -283,15 +274,15 @@
 					    				</div>
 					    				<div class="crypto-fund-accordion-container inline-block rules">
 					    					<h4 class="started-home light-grey">Fund</h4>
-					    					<h4 class="started-home-with light-green">+13,5%</h4>
+					    					<h4 class="started-home-with light-red">-13,5%</h4>
 					    				</div>
 					    				<div class="crypto-balance-accordion-container inline-block rules">
 					    					<h4 class="balance light-grey">Generated</h4>
-					    					<h3 class="crypto-balance">
+					    					<h4 class="crypto-balance">
 					    						<sup class="black">$</sup>
 					    						<span class="black"><strong>3,456</strong></span>
 					    						<sup class="black">00</sup>
-					    					</h3>
+					    					</h4>
 					    				</div>
 				    				</a>
 							      </div>

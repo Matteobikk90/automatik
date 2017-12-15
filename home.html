@@ -8,6 +8,7 @@
 
 	<!-- Css -->
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="./images/Robo.to.png"/>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
@@ -15,6 +16,16 @@
 </head>
 
 <body>
+
+	<!-- Hamburger Button -->
+        <div class="collpasingSidebar hidden-sm visible-xs">
+          <svg viewBox="0 0 800 600">
+            <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+            <path d="M300,320 L540,320" id="middle"></path>
+            <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+          </svg>
+        </div>
+    <!-- End Hamburger Button -->
 
 	<div class="wrapper">
 
@@ -71,16 +82,6 @@
                 
             <div class="container">
 
-            	<!-- Hamburger Button -->
-            	<div class="collpasingSidebar hidden-sm visible-xs">
-				  <svg viewBox="0 0 800 600">
-				    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
-				    <path d="M300,320 L540,320" id="middle"></path>
-				    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
-				  </svg>
-				</div>
-				<!-- End Hamburger Button -->
-
             	<div class="row">
             		<div class="content-header">
 	            		<div class="col-lg-3 col-md-5 col-xs-12">
@@ -98,19 +99,19 @@
 						<div class="col-lg-5 col-md-7 col-xs-12">
 		            		<div class="crypto-second-column">
 			    				<div class="crypto-since-container inline-block">
-			    					<h4 class="since light-grey">since</h4>
+			    					<h4 class="since light-grey">Since</h4>
 			    					<h4 class="since-date">12 Dec 2017</h4>
 			    				</div>
 			    				<div class="crypto-started-container inline-block">
-			    					<h4 class="started light-grey">started</h4>
+			    					<h4 class="started light-grey">Started</h4>
 			    					<h4 class="started-with">$2,360.00</h4>
 			    				</div>
 			    				<div class="crypto-generating-container inline-block">
-			    					<h4 class="generating light-grey">generating</h4>
+			    					<h4 class="generating light-grey">Generating</h4>
 			    					<h4 class="generating-result">$3,764.39</h4>
 			    				</div>
 			    				<div class="crypto-fund-container inline-block">
-			    					<h4 class="fund light-grey">fund</h4>
+			    					<h4 class="fund light-grey">Fund</h4>
 			    					<h4 class="fund-result-with light-green">+2.28%</h4>
 			    				</div>
 		    				</div>
@@ -162,16 +163,16 @@
 		    				<div class="crypto-trigger-play inline-block pull-right">
 		    					<h5 class="inline-block">Controls:</h5>
 		    					<div class="live inline-block">
-		    						<a href="">
+		    						<a class="play-btn active" href="#">
 		    							<img class="inline-block" src="./images/live-icon.png"  title="live-icon" alt="live-icon">
+		    							<h6>Live</h6>
 		    						</a>
-		    						<h6>Live</h6>
 		    					</div>
 		    					<div class="pause inline-block">
-		    						<a href="">
+		    						<a class="play-btn" href="#">
 		    							<img class="inline-block" src="./images/pause-icon.png"  title="pause-icon" alt="pause-icon">
+		    							<h6>Pause</h6>
 		    						</a>
-		    						<h6>Pause</h6>
 		    					</div>
 		    				</div>
 		    			</div>

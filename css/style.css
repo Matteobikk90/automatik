@@ -43,6 +43,14 @@ h1, h2, h3, h4, h5, h6, ul, p {
 	color: #4d5aff;
 }
 
+.light-red {
+	color: #ff165e;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
 /* Inputs, buttons */
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -61,12 +69,25 @@ h1, h2, h3, h4, h5, h6, ul, p {
   color: #3e6373;
 }
 
-select, input[type="date"] {
+select {
 	width: 129px;
 	height: 36px;
 	border-radius: 5px;
 	background-color: #dddddd;
 	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.39);
+}
+
+input[type="date"] {
+	width: 164px;
+    font-size: 16px;
+	height: 36px;
+	border-radius: 5px;
+	background-color: #dddddd;
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.39);
+}
+
+input[type=checkbox] {
+    margin: 4px 10px 0 0;
 }
 
 input:focus {
@@ -277,7 +298,7 @@ path#middle {
 }
 
 .main-background .login-container img {
-	margin: 147px 0 23px;
+	margin: 80px 0 23px;
 }
 
 .main-background .login-container h3 {
@@ -502,13 +523,13 @@ path#middle {
     margin-right: 4px;
 }
 
-.crypto-since-home-container, .crypto-started-home-container {
+.crypto-balance-container, .crypto-since-home-container, .crypto-started-home-container {
     position: relative;
     top: 8px;
-    margin: 0 3px;
+    margin-right: 25px;
 }
 
-.crypto-since-container h4:last-child, .crypto-started-container h4:last-child, .crypto-generating-container h4:last-child, .crypto-fund-container h4:last-child, .crypto-since-home-container h4:last-child, .crypto-started-home-container h4:last-child {
+.crypto-since-container h4:last-child, .crypto-started-container h4:last-child, .crypto-generating-container h4:last-child, .crypto-fund-container h4:last-child, .crypto-balance, .crypto-since-home-container h4:last-child, .crypto-started-home-container h4:last-child {
 	position: relative;
     top: 6px;
 }
@@ -546,17 +567,18 @@ path#middle {
 	margin: 0 18px;
 }
 
+.content-trigger .crypto-trigger-play a {
+	display: block;
+}
+
+.content-trigger .crypto-trigger-play .play-btn.active {
+	text-transform: uppercase;
+}
+
 .content-trigger .crypto-trigger-play h6 {
     position: relative;
     top: 11px;
-}
-
-.content-trigger .crypto-trigger-play .live h6 {
-    left: 5px;
-}
-
-.content-trigger .crypto-trigger-play .pause h6 {
-    left: -5px;
+    color: #1c2237;
 }
 
 .content-trigger-function, .content-do-function, .content-and-function {
@@ -626,13 +648,17 @@ path#middle {
 	padding: 55px 0 34px 29px;
 }
 
+.account-content .col-lg-8 h4 {
+	padding: 55px 0 34px 0;
+}
+
 .account-content form {
     color: black;
 }
 
 .account-content form .card-js {
     margin: 34px 0 19px 29px;
-    width: 312px;
+    width: 320px;
 }
 
 .account-content form .account-details {
@@ -641,22 +667,29 @@ path#middle {
     padding: 8px;
 	font-size: 14px;
 	color: black;
-    width: 312px;
+    width: 320px;
     border-radius: 4px;
 }
 
-.account-content form input[type="checkbox"], .account-content form input[type="submit"] {
-	margin: 20px 10px 20px 29px;
+.account-content form .checkboxes {
+    padding: 0 0 15px 29px;    
+    display: block;
+    white-space: nowrap;
+}
+
+.account-content form input[type="submit"] {
+	margin: 15px 0 15px 29px;
 }
 
 .account-content form label {
 	font-weight: lighter;
 	cursor: pointer;
 	font-size: 16px;
+	display: unset;
 }
 
 .account-content form input[type="submit"] {
-	width: 312px;
+	width: 320px;
 	font-size: 16px;
 	margin: 10px 0 10px 29px;
 }
@@ -664,7 +697,7 @@ path#middle {
 .account-content form input[type="text"], .account-content form input[type="email"], .account-content form input[type="number"] {
     margin: 10px 0 10px 29px;
     border-radius: 4px;
-    width: 312px;
+    width: 320px;
     box-shadow: none;
     outline: none;
     border: 1px solid #dcdcdc;
@@ -680,10 +713,10 @@ path#middle {
 }
 
 .account-content .lite-trader {
-	width: 200px;
+	width: 100%;
 	padding: 28px;
 	background-color: #9b9b9b;
-	margin: 0 0 60px 30px;
+	margin: 0 0 60px 0;
 	color: #efefef;
 	-webkit-box-shadow: 10px 10px 19px -9px rgba(155,155,155,1);
 	-moz-box-shadow: 10px 10px 19px -9px rgba(155,155,155,1);
@@ -699,7 +732,7 @@ path#middle {
 .account-content .lite-trader strong, .account-content .pro-trader strong, .account-content .guru-trader strong {
 	font-size: 46px;
 	letter-spacing: 5.9px;
-	padding-left: 13px;
+    display: block;
 }
 
 .account-content .lite-trader .lite-trader-details, .account-content .pro-trader .pro-trader-details, .account-content .guru-trader .guru-trader-details {
@@ -716,6 +749,7 @@ path#middle {
 	width: 145px;
 	height: 39px;
 	display: block;
+	margin: 0 auto;
     border-radius: 25px;
     background-color: #9b9b9b;
     line-height: 39px;
@@ -725,13 +759,12 @@ path#middle {
 }
 
 .account-content .pro-trader, .account-content .guru-trader {
-	width: 200px;
+	width: 100%;
 	padding: 28px;
 	background-color: #4d5aff;
 	box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.05);
-	margin: 0 0 0 30px;
+	margin: 0 0 60px 0;
 	color: #efefef;
-	margin-bottom: 60px;
 	-webkit-box-shadow: 10px 10px 19px -9px rgba(77,90,255,1);
 	-moz-box-shadow: 10px 10px 19px -9px rgba(77,90,255,1);
 	box-shadow: 10px 10px 19px -9px rgba(77,90,255,1);
@@ -742,6 +775,7 @@ path#middle {
     display: inline-block;
     width: 145px;
     height: 39px;
+    margin: 0 auto;
     line-height: 39px;
 	display: block;
     border-radius: 25px;
@@ -756,6 +790,13 @@ path#middle {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+@media (max-width: 1200px) {
+    .account-content .col-lg-8 h4 {
+	    padding: 55px 0 34px 29px;
+	}
+
+}
+
 @media (max-width: 992px) {
     /* Homepage */
     .crypto-second-column-marketplace {
@@ -805,13 +846,17 @@ path#middle {
 }
 
 @media (max-width: 450px) {
-	.account-content .col-lg-4.col-md-4.col-sm-4.col-xs-6.text-center {
+	.account-content .col-lg-4.col-md-4.col-sm-6.col-xs-6.text-center {
 		width: 100%;
 	}
 
 	.crypto-accordions .crypto-name-accordion {
 	    position: relative;
 	    top: 0;
+	}
+
+	.account-content form .checkboxes {
+	    white-space: unset;
 	}
 }
 

@@ -5,6 +5,7 @@ $(document).ready(function() {
 
         if ($('.sidebar').hasClass('active')) {
   			$('#checkIfNavbarIsOpen').removeClass('no-overflow');
+  			$(this).hide();
     	} else {
     		$('#checkIfNavbarIsOpen').addClass('no-overflow');
     	}
@@ -12,6 +13,11 @@ $(document).ready(function() {
 
   	$(".collpasingSidebar").click(function() {
     	return $(".collpasingSidebar").toggleClass("cross");
+  	});
+
+  	$('.play-btn').click(function() {
+		$('a').removeClass('active');
+		$(this).toggleClass('active');
   	});
 
  //  	$("body").on('click', function () {
