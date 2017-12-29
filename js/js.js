@@ -6,8 +6,10 @@ $(document).ready(function() {
         if ($('.sidebar').hasClass('active')) {
   			$('#checkIfNavbarIsOpen').removeClass('no-overflow');
   			$(this).hide();
+  			$('.container').addClass('opacity');
     	} else {
     		$('#checkIfNavbarIsOpen').addClass('no-overflow');
+    		$('.container').removeClass('opacity');
     	}
     });
 
@@ -19,17 +21,6 @@ $(document).ready(function() {
 		$('a').removeClass('active');
 		$(this).toggleClass('active');
   	});
-
- //  	$("body").on('click', function () {
-	// 	if($('.sidebar').hasClass('active')) {
-	// 		$(this).removeClass('active');
-	// 	}
-	// });
-
-    // $('#content').on('click', function () {
-    // 	console.log("eghjkl")
-    //     $('#sidebar.active').removeClass('active');
-    // });
 
 });
 

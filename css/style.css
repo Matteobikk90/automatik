@@ -22,6 +22,18 @@ h1, h2, h3, h4, h5, h6, ul, p {
 
 /* Generral Rules */
 
+.no-overflow {
+	overflow: hidden;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.opacity {
+	opacity: 0.2;
+}
+
 .inline-block {
 	display: inline-block;
 }
@@ -38,17 +50,12 @@ h1, h2, h3, h4, h5, h6, ul, p {
 	color: #7ed321;
 }
 
-
 .light-blue {
 	color: #4d5aff;
 }
 
 .light-red {
 	color: #ff165e;
-}
-
-.no-padding {
-	padding: 0 !important;
 }
 
 /* Inputs, buttons */
@@ -142,7 +149,6 @@ path#middle {
   stroke-dashoffset: -115px;
   stroke-dasharray: 1px 220px;
 }
-
 
 /* Sidebar */
 
@@ -783,10 +789,6 @@ path#middle {
 	text-decoration: none;
 }
 
-.no-overflow {
-	overflow: hidden;
-}
-
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -797,14 +799,13 @@ path#middle {
 
 }
 
-@media (max-width: 992px) {
-    /* Homepage */
+/*@media (max-width: 992px) {
     .crypto-second-column-marketplace {
 		position: relative;
     	left: -14px;
 	}
 
-}
+}*/
 
 @media (max-width: 768px) {
 	/* Sidebar Toggle */
@@ -858,6 +859,7 @@ path#middle {
 	.account-content form .checkboxes {
 	    white-space: unset;
 	}
+
 }
 
 
